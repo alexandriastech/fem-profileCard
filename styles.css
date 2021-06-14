@@ -20,16 +20,20 @@ body {
   background-color: white;
   background-image: url(images/bg-pattern-card.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top 100%;
-  width: 300px;
+  background-size: 100%;
+  width: 15rem;
   height: 300px;
   padding: 1.5rem;
   border-radius: 5%;
-  display: grid;
-  grid-template-rows: [first] 0.5fr [second] auto [third] auto;
-
+  /*
+   display: grid;
+  grid-template-rows: [first] 0.5fr [second] 1fr [third] 1fr;
   justify-items: center;
+  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card img {
@@ -38,22 +42,20 @@ body {
 }
 
 .profilePic {
-  grid-area: first;
   padding-top: 2.5rem;
 }
 
 .profile {
-  grid-area: second;
   padding-top: 1.5rem;
   display: inline-block;
 }
 
 .stats {
-  grid-area: third;
   display: grid;
   grid-template-columns: [followers] 1fr [likes] 1fr [photos] 1fr;
   text-align: center;
   align-items: end;
+  padding-top: 15px;
 }
 
 .statsOne {
