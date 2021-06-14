@@ -1,0 +1,66 @@
+body {
+  background: hsl(185, 75%, 39%);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  /*background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw),
+    left calc(40vw + 25%) top calc(72vh - 10vw); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  margin: auto;
+  background-color: white;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 100%;
+  max-width: 20rem;
+
+  height: 300px;
+  padding: 1.5rem;
+  border-radius: 5%;
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+  display: grid;
+
+  grid-template-rows: [first] 0.5fr [second] auto [third] auto;
+  justify-items: center;
+}
+
+.card img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.profilePic {
+  grid-area: first;
+  padding-top: 2.5rem;
+}
+
+.profile {
+  grid-area: second;
+  padding-top: 1.5rem;
+}
+
+.stats {
+  grid-area: third;
+}
+
+/*TYPOGRAPHY*/
+
+
+
+@media screen and (min-width: 1440px) {
+}
