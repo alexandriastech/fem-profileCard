@@ -21,15 +21,10 @@ body {
   background-image: url(images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 15rem;
-  height: 300px;
-  padding: 1.5rem;
+  min-width: 20rem;
+  height: 350px;
+
   border-radius: 5%;
-  /*
-   display: grid;
-  grid-template-rows: [first] 0.5fr [second] 1fr [third] 1fr;
-  justify-items: center;
-  */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,35 +37,37 @@ body {
 }
 
 .profilePic {
-  padding-top: 2.5rem;
+  padding-top: 4rem;
 }
 
 .profile {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: inline-block;
 }
 
 .stats {
-  display: grid;
-  grid-template-columns: [followers] 1fr [likes] 1fr [photos] 1fr;
   text-align: center;
+
+  padding-top: 1.5rem;
+  display: flex;
   align-items: end;
-  padding-top: 15px;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+  width: 100%;
 }
 
+hr {
+  width: 100%;
+  background-color: hsl(0, 0%, 59%);
+}
 .statsOne {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .statTwo {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .statsThree {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 /*TYPOGRAPHY*/
 
